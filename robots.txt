@@ -1,0 +1,61 @@
+# ============================================
+# ROBOTS.TXT - War Zone Paintball Malang
+# https://jasa-paintball-batu.vercel.app/
+# ============================================
+
+# Izinkan semua search engine crawlers
+User-agent: *
+Allow: /
+
+# Izinkan crawling gambar untuk Google Images
+User-agent: Googlebot-Image
+Allow: /assets/img/
+
+# Izinkan AdsBot Google (jika menggunakan Google Ads)
+User-agent: AdsBot-Google
+Allow: /
+
+# Izinkan Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Izinkan Yandex
+User-agent: Yandex
+Allow: /
+
+# Izinkan Baidu (untuk pasar China)
+User-agent: Baiduspider
+Allow: /
+
+# Block halaman yang tidak perlu diindex
+User-agent: *
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*?*
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/
+Disallow: /.vercel/
+
+# Block parameter tracking yang duplicate content
+Disallow: /*?utm_*
+Disallow: /*?ref=*
+Disallow: /*?fbclid=*
+Disallow: /*?gclid=*
+
+# Crawl delay untuk bot yang tidak sopan (opsional)
+# User-agent: SemrushBot
+# Crawl-delay: 10
+
+# User-agent: AhrefsBot
+# Crawl-delay: 10
+
+# ============================================
+# SITEMAP LOCATION
+# ============================================
+Sitemap: https://jasa-paintball-batu.vercel.app/sitemap.xml
+
+# ============================================
+# HOST (untuk Yandex)
+# ============================================
+Host: https://jasa-paintball-batu.vercel.app
